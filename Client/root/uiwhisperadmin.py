@@ -9,7 +9,7 @@ class AdminWhisperManager(ui.Window):
 
 		self.SelectedColor = ""
 		self.Colors = [
-			"Normal", "Mavi", "Yesil", "Kirmizi", "Pembe"
+			"Normal", "Mavi", "Yeşil", "Kırmızı", "Pembe"
 		]
 		self.ColorCodes = [
 			"|h|r", "|cFF0080FF|H|h", "|cFF00FF00|H|h", "|cFFFF0000|H|h", "|cFFFF00FF|H|h"
@@ -17,10 +17,10 @@ class AdminWhisperManager(ui.Window):
 
 		self.SelectedReadyMadeMessage = ""
 		self.ReadyMadeMessages = [
-			"Mesaj1", "Mesaj2", "Mesaj3", "Mesaj4", "Mesaj5"
+			"Mesaj 1", "Mesaj 2", "Mesaj 3", "Mesaj 4", "Mesaj 5"
 		]
 		self.ReadyMadeMessagesContents = [
-			"Bu bir hazir mesaj 1", "Bu bir hazir mesaj 2", "Bu bir hazir mesaj 3", "Bu bir hazir mesaj 4", "Bu bir hazir mesaj 5"
+			"Hazır mesaj 1", "Hazır mesaj 2", "Hazır mesaj 3", "Hazır mesaj 4", "Hazır mesaj 5"
 		]
 		self.ReadyMadeMessagesFiles = [
 			"lib/hazir_mesaj_1.txt","lib/hazir_mesaj_2.txt","lib/hazir_mesaj_3.txt","lib/hazir_mesaj_4.txt","lib/hazir_mesaj_5.txt"
@@ -41,7 +41,7 @@ class AdminWhisperManager(ui.Window):
 		self.UI_Elements["MainBoard"].SetCenterPosition()
 		self.UI_Elements["MainBoard"].AddFlag('movable')
 		self.UI_Elements["MainBoard"].AddFlag('float')
-		self.UI_Elements["MainBoard"].SetTitleName('Toplu mesaj paneli')
+		self.UI_Elements["MainBoard"].SetTitleName('Toplu Mesaj Paneli')
 		self.UI_Elements["MainBoard"].SetCloseEvent(self.Close)
 		self.UI_Elements["MainBoard"].Show()
 
@@ -74,7 +74,7 @@ class AdminWhisperManager(ui.Window):
 		self.UI_Elements["Send_Button"].SetUpVisual('d:/ymir work/ui/public/large_button_01.sub')
 		self.UI_Elements["Send_Button"].SetOverVisual('d:/ymir work/ui/public/large_button_02.sub')
 		self.UI_Elements["Send_Button"].SetDownVisual('d:/ymir work/ui/public/large_button_03.sub')
-		self.UI_Elements["Send_Button"].SetText("Gonder")
+		self.UI_Elements["Send_Button"].SetText("Gönder")
 		self.UI_Elements["Send_Button"].SetEvent(self.__SendFunc)
 		self.UI_Elements["Send_Button"].Show()
 
@@ -187,4 +187,3 @@ class AdminWhisperManager(ui.Window):
 	
 	def Close(self):
 		self.UI_Elements["MainBoard"].Hide()
-
