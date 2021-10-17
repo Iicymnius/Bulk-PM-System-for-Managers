@@ -10,22 +10,22 @@
 
 //find again;
 
-	HEADER_GC_MAIN_CHARACTER4_BGM_VOL = 138,
+		HEADER_GC_MAIN_CHARACTER4_BGM_VOL = 138,
 
 //add below;
 
 #ifdef ENABLE_PM_ALL_SEND_SYSTEM
-	HEADER_GC_BULK_WHISPER = 139,//You may need to change the number 139 here.
+		HEADER_GC_BULK_WHISPER = 139,//You may need to change the number 139 here.
 #endif
 
 //find again;
 
-	HEADER_GG_CHECK_AWAKENESS = 29,
+		HEADER_GG_CHECK_AWAKENESS = 29,
 
 //add below;
 
 #ifdef ENABLE_PM_ALL_SEND_SYSTEM
-	HEADER_GG_BULK_WHISPER = 30,//You may need to change the number 30 here.
+		HEADER_GG_BULK_WHISPER = 30,//You may need to change the number 30 here.
 #endif
 
 //find again;
